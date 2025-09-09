@@ -1,0 +1,322 @@
+/* Enhanced Project Management Styles */
+.management-error {
+  background: linear-gradient(45deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ef4444;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.management-error .error-icon {
+  font-size: 1.2rem;
+}
+
+.input-hint {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+/* Enhanced form layout for project management */
+.management-form .space-y-4 > div {
+  margin-bottom: 1.5rem;
+}
+
+.management-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.management-form input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.management-form input[type="text"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.management-form input[type="text"]::placeholder {
+  color: #64748b;
+}
+
+/* Table cell specific styles */
+.management-table td.text-gray-300 {
+  color: #cbd5e1 !important;
+}
+
+.management-table td.text-gray-400 {
+  color: #94a3b8 !important;
+}
+
+.management-table .font-medium.text-white {
+  font-weight: 600;
+  color: #f1f5f9 !important;
+}
+
+/* Responsive improvements for project table */
+@media (max-width: 1024px) {
+  .management-table-container {
+    overflow-x: auto;
+  }
+  
+  .management-table {
+    min-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .management-table {
+    min-width: 600px;
+    font-size: 0.875rem;
+  }
+  
+  .management-table th,
+  .management-table td {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .management-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .management-actions button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Animation for error messages removed */
+
+/* Loading state enhancements */
+.loading-state h3 {
+  color: #e2e8f0;
+  margin-bottom: 0.5rem;
+}
+
+.loading-state p {
+  color: #94a3b8;
+}
+
+/* Empty state specific styles */
+.empty-state .add-member-btn {
+  margin-top: 1rem;
+}
+
+/* Form validation styles */
+.management-form input:invalid {
+  border-color: #ef4444;
+}
+
+.management-form input:valid {
+  border-color: #10b981;
+}
+
+.management-form input:focus:invalid {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+.management-form input:focus:valid {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+/* Enhanced Select Styles for Dark Theme */
+.team-members-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  transition: all 0.3s ease;
+  min-height: 120px;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+.team-members-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.team-members-select option {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #334155;
+}
+
+.team-members-select option:checked {
+  background: linear-gradient(45deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+}
+
+.team-members-select option:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Multiple select specific styles */
+.team-members-select[multiple] {
+  background-image: none;
+  padding: 0.5rem;
+}
+
+.team-members-select[multiple] option {
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.team-members-select[multiple] option:hover {
+  background: #3b82f6;
+  color: white;
+  transform: translateX(2px);
+}
+
+/* Scrollbar styling for select */
+.team-members-select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.team-members-select::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+.team-members-select::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+.team-members-select::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Enhanced form layout for team member selection */
+.management-form .space-y-4 > div {
+  margin-bottom: 1.5rem;
+}
+
+.management-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #e2e8f0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.management-form input[type="text"],
+.management-form select,
+.management-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.management-form input[type="text"]:focus,
+.management-form select:focus,
+.management-form textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  transform: translateY(-1px);
+}
+
+.management-form input[type="text"]::placeholder {
+  color: #64748b;
+}
+
+/* Input hint styling */
+.input-hint {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  display: block;
+  font-style: italic;
+}
+
+/* Selected items count display */
+.selected-count {
+  background: linear-gradient(45deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+/* Responsive design for team member selection */
+@media (max-width: 768px) {
+  .team-members-select {
+    min-height: 100px;
+    font-size: 0.9rem;
+  }
+  
+  .team-members-select[multiple] option {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+  
+  .input-hint {
+    font-size: 0.75rem;
+  }
+}
+
+/* Animation for selected options removed */
+
+/* Custom checkbox style for multiple select (optional enhancement) */
+.team-members-select[multiple] option {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.team-members-select[multiple] option::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #475569;
+  border-radius: 3px;
+  background: #1e293b;
+}
+
+.team-members-select[multiple] option:checked::before {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  content: '✓';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}

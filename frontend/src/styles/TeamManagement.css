@@ -1,0 +1,420 @@
+/* Team Management Dark Theme Styles */
+.management-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #0f172a;
+  min-height: 100vh;
+  color: #e2e8f0;
+}
+
+.management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-radius: 12px;
+  color: #f8fafc;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #334155;
+}
+
+.management-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.add-member-btn {
+  background: linear-gradient(45deg, #3b82f6 0%, #1d4ed8 100%);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  border: 1px solid #3b82f6;
+}
+
+.add-member-btn:hover {
+  /* transform removed */
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+  background: linear-gradient(45deg, #2563eb 0%, #1e40af 100%);
+}
+
+.management-table-container {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  border: 1px solid #334155;
+}
+
+.management-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.management-table th {
+  background: linear-gradient(135deg, #475569 0%, #334155 100%);
+  color: #f8fafc;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #475569;
+}
+
+.management-table td {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid #334155;
+  transition: all 0.2s ease;
+  color: #cbd5e1;
+}
+
+/* Hover effect on table rows removed */
+
+.management-table tr:last-child td {
+  border-bottom: none;
+}
+
+.management-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-start;
+}
+
+.management-actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.management-actions button:first-child {
+  background: linear-gradient(45deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  border: 1px solid #3b82f6;
+}
+
+.management-actions button:first-child:hover {
+  /* transform removed */
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+  background: linear-gradient(45deg, #2563eb 0%, #1e40af 100%);
+}
+
+.management-actions button:last-child {
+  background: linear-gradient(45deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  border: 1px solid #ef4444;
+}
+
+.management-actions button:last-child:hover {
+  /* transform removed */
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.5);
+  background: linear-gradient(45deg, #dc2626 0%, #b91c1c 100%);
+}
+
+/* Pagination Styles */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.pagination-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #3b82f6;
+  background: #1e293b;
+  color: #3b82f6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #3b82f6;
+  color: white;
+  /* transform removed */
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  border-color: #64748b;
+  color: #64748b;
+}
+
+.pagination-info {
+  font-weight: 600;
+  color: #94a3b8;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Loading and Empty States */
+.loading-state {
+  text-align: center;
+  padding: 3rem;
+  color: #64748b;
+  background: #1e293b;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.loading-state h3 {
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #64748b;
+  background: #1e293b;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.empty-state h3 {
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.empty-state p {
+  color: #94a3b8;
+}
+
+/* Form Styles for Dark Theme */
+.management-form {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+}
+
+.management-form label {
+  color: #e2e8f0;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.management-form input {
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  padding: 0.75rem;
+  border-radius: 6px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.management-form input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .management-container {
+    padding: 1rem;
+  }
+  
+  .management-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .management-table {
+    font-size: 0.875rem;
+  }
+  
+  .management-table th,
+  .management-table td {
+    padding: 0.75rem 1rem;
+  }
+  
+  .management-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .pagination-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Scrollbar Styling for Dark Theme */
+.management-table-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.management-table-container::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.management-table-container::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+.management-table-container::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+/* Enhanced Form Styles for Dark Theme */
+.management-form {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+}
+
+.management-form h2 {
+  color: #f1f5f9;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #334155;
+  padding-bottom: 0.75rem;
+}
+
+.management-form label {
+  color: #e2e8f0;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 0.95rem;
+}
+
+.management-form input {
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  width: 100%;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.management-form input::placeholder {
+  color: #64748b;
+}
+
+.management-form input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  transform: translateY(-1px);
+}
+
+.management-form input:hover {
+  border-color: #475569;
+}
+
+/* Form Button Styles */
+.management-form .form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #334155;
+}
+
+.management-form .cancel-btn {
+  background: linear-gradient(45deg, #475569 0%, #334155 100%);
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.management-form .cancel-btn:hover {
+  background: linear-gradient(45deg, #64748b 0%, #475569 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.management-form .submit-btn {
+  background: linear-gradient(45deg, #3b82f6 0%, #2563eb 100%);
+  border: 1px solid #3b82f6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.management-form .submit-btn:hover {
+  background: linear-gradient(45deg, #2563eb 0%, #1e40af 100%);
+  /* transform removed */
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.5);
+}
+
+/* Form Validation Styles */
+.management-form input:invalid {
+  border-color: #ef4444;
+}
+
+.management-form input:valid {
+  border-color: #10b981;
+}
+
+.management-form .required-field::after {
+  content: "*";
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+/* Responsive Form Design */
+@media (max-width: 768px) {
+  .management-form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .management-form .form-buttons {
+    flex-direction: column;
+  }
+  
+  .management-form .cancel-btn,
+  .management-form .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
