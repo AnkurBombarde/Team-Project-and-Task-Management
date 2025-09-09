@@ -1,7 +1,8 @@
 ﻿# Team-Project-and-Task-Management
- 
+
 A modern, full-stack task management application built with **React**, **Express.js**, and **MongoDB**.  
 Streamline your team collaboration, project tracking, and task management in one intuitive platform.
+
 ---
 
 ## ✨ Features
@@ -54,6 +55,7 @@ Streamline your team collaboration, project tracking, and task management in one
 - **Node.js** 16+  
 - **MongoDB** (local or Atlas)  
 - **npm** 
+
 
 
 
